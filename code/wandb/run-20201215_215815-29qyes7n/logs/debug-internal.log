@@ -1,0 +1,198 @@
+2020-12-15 21:58:16,136 INFO    MainThread:536266 [internal.py:wandb_internal():62] W&B internal server running at pid: 536266
+2020-12-15 21:58:16,137 DEBUG   HandlerThread:536266 [handler.py:handle_request():54] handle_request: check_version
+2020-12-15 21:58:16,137 INFO    WriterThread:536266 [datastore.py:open_for_write():76] open: wandb/run-20201215_215815-29qyes7n/run-29qyes7n.wandb
+2020-12-15 21:58:16,138 DEBUG   SenderThread:536266 [sender.py:send():88] send: header
+2020-12-15 21:58:16,138 DEBUG   SenderThread:536266 [sender.py:send():88] send: request
+2020-12-15 21:58:16,138 DEBUG   SenderThread:536266 [sender.py:send_request():97] send_request: check_version
+2020-12-15 21:58:16,139 DEBUG   Thread-4  :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): pypi.org:443
+2020-12-15 21:58:16,878 DEBUG   Thread-4  :536266 [connectionpool.py:_make_request():428] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-15 21:58:17,083 DEBUG   SenderThread:536266 [sender.py:send():88] send: run
+2020-12-15 21:58:17,084 DEBUG   SenderThread:536266 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch, universal_newlines=False, shell=None, istream=None)
+2020-12-15 21:58:17,088 DEBUG   SenderThread:536266 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-15 21:58:17,094 DEBUG   SenderThread:536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:58:17,795 DEBUG   SenderThread:536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:58:17,799 DEBUG   HandlerThread:536266 [handler.py:handle_request():54] handle_request: run_start
+2020-12-15 21:58:17,800 INFO    SenderThread:536266 [dir_watcher.py:__init__():167] watching files in: wandb/run-20201215_215815-29qyes7n/files
+2020-12-15 21:58:17,800 INFO    SenderThread:536266 [sender.py:_start_run_threads():461] run started: 29qyes7n with start time 1608049695
+2020-12-15 21:58:17,800 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:17,800 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:17,808 DEBUG   HandlerThread:536266 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-15 21:58:17,813 DEBUG   HandlerThread:536266 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch, universal_newlines=False, shell=None, istream=None)
+2020-12-15 21:58:17,841 DEBUG   SenderThread:536266 [sender.py:send():88] send: files
+2020-12-15 21:58:17,841 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-metadata.json with policy now
+2020-12-15 21:58:17,844 DEBUG   Thread-11 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:58:17,844 DEBUG   HandlerThread:536266 [handler.py:handle_request():54] handle_request: status
+2020-12-15 21:58:17,845 DEBUG   SenderThread:536266 [sender.py:send():88] send: request
+2020-12-15 21:58:17,845 DEBUG   SenderThread:536266 [sender.py:send_request():97] send_request: status
+2020-12-15 21:58:17,846 DEBUG   SenderThread:536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:58:18,346 DEBUG   SenderThread:536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:58:18,350 DEBUG   Thread-11 :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:58:18,352 DEBUG   Thread-11 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 21:58:18,800 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201215_215815-29qyes7n/files/wandb-metadata.json
+2020-12-15 21:58:18,800 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:18,800 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201215_215815-29qyes7n/files/requirements.txt
+2020-12-15 21:58:18,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:19,067 DEBUG   Thread-11 :536266 [connectionpool.py:_make_request():428] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/me17b084/RotNet-PyTorch-code/29qyes7n/wandb-metadata.json?Expires=1608136098&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ZQcU%2BYnUFT4zWefrq7GiZoDc2tjXWddiwKyBaTTOmjVsj49YvCSe6zGU5X7loLEucyaLz8CKrF91hTrHlWzWyfdUbcV60ht3Cbk3giy9wX3053k2aaA4N19t2F1YGhI0DRvUzI6jQDh6g9AhrV7I8UVD9QwcynF1vxPjSiRFJqMT05dQS%2BKR55s7I2CjXqitxhEBt7bLbUPo1JVD%2BT9aVfE%2BEgWHDEcmi4Mwxj3zKT4QJFpzFH%2Fmjh5E1YQgiXvZXCcZ29eBRO8VFId%2FaDSIM2LkqtJxojgVztp07ndlJjaanZFB3baGob0TT%2FJLMddlSMUKfMXQY6po3lgJheHhLg%3D%3D HTTP/1.1" 200 0
+2020-12-15 21:58:19,068 INFO    Thread-11 :536266 [upload_job.py:push():112] Uploaded file /tmp/tmp4fblqhw6wandb/25z6jojv-wandb-metadata.json
+2020-12-15 21:58:19,800 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:19,893 DEBUG   Thread-5  :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:58:20,667 DEBUG   Thread-5  :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /files/me17b084/RotNet-PyTorch-code/29qyes7n/file_stream HTTP/1.1" 200 None
+2020-12-15 21:58:20,800 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:20,816 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:20,816 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:20,816 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:21,166 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:21,166 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:21,167 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:21,188 DEBUG   SenderThread:536266 [sender.py:send():88] send: stats
+2020-12-15 21:58:21,520 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:21,520 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:21,521 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:21,800 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:21,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:21,871 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:21,871 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:21,871 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:22,221 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:22,222 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:22,223 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:22,576 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:22,576 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:22,577 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:22,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:22,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:22,867 DEBUG   Thread-5  :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /files/me17b084/RotNet-PyTorch-code/29qyes7n/file_stream HTTP/1.1" 200 None
+2020-12-15 21:58:22,922 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:22,922 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:22,923 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:23,303 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:23,303 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:23,303 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:23,695 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:23,695 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:23,696 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:23,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:23,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:24,055 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:24,056 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:24,056 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:24,406 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:24,407 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:24,408 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:24,757 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:24,758 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:24,758 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:24,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:24,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:25,035 DEBUG   Thread-5  :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /files/me17b084/RotNet-PyTorch-code/29qyes7n/file_stream HTTP/1.1" 200 None
+2020-12-15 21:58:25,104 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:25,105 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:25,105 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:25,453 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:25,453 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:25,454 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:25,650 DEBUG   SenderThread:536266 [sender.py:send():88] send: stats
+2020-12-15 21:58:25,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:25,801 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:25,803 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:25,803 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:25,803 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:26,157 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:26,157 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:26,157 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:26,506 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:26,506 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:26,507 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:26,802 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:26,802 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:26,859 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:26,859 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:26,859 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:26,964 DEBUG   Thread-5  :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /files/me17b084/RotNet-PyTorch-code/29qyes7n/file_stream HTTP/1.1" 200 None
+2020-12-15 21:58:27,210 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:27,210 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:27,210 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:27,561 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:27,561 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:27,562 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:27,802 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:27,802 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:27,915 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:27,915 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:27,915 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:28,264 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:28,264 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:28,264 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:28,618 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:28,618 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:28,620 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:28,802 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:28,802 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:28,968 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:28,968 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:28,968 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:29,115 DEBUG   Thread-5  :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /files/me17b084/RotNet-PyTorch-code/29qyes7n/file_stream HTTP/1.1" 200 None
+2020-12-15 21:58:29,321 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:29,321 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:29,321 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:29,671 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:29,671 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:29,671 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:29,802 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:29,803 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:30,021 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:30,021 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:30,021 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:30,103 DEBUG   SenderThread:536266 [sender.py:send():88] send: stats
+2020-12-15 21:58:30,370 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:30,370 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:30,371 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:30,721 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:30,721 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:30,723 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:30,803 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:30,803 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:31,071 DEBUG   SenderThread:536266 [sender.py:send():88] send: history
+2020-12-15 21:58:31,072 DEBUG   SenderThread:536266 [sender.py:send():88] send: summary
+2020-12-15 21:58:31,072 INFO    SenderThread:536266 [sender.py:_save_file():542] saving file wandb-summary.json with policy end
+2020-12-15 21:58:31,138 WARNING MainThread:536266 [internal.py:wandb_internal():116] Internal process interrupt: 1
+2020-12-15 21:58:31,228 DEBUG   Thread-5  :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /files/me17b084/RotNet-PyTorch-code/29qyes7n/file_stream HTTP/1.1" 200 None
+2020-12-15 21:58:31,313 WARNING MainThread:536266 [internal.py:wandb_internal():116] Internal process interrupt: 2
+2020-12-15 21:58:31,313 ERROR   MainThread:536266 [internal.py:wandb_internal():119] Internal process interrupted.
+2020-12-15 21:58:31,426 INFO    HandlerThread:536266 [handler.py:finish():267] shutting down handler
+2020-12-15 21:58:31,426 INFO    SenderThread:536266 [sender.py:finish():583] shutting down sender
+2020-12-15 21:58:31,426 INFO    SenderThread:536266 [dir_watcher.py:finish():280] shutting down directory watcher
+2020-12-15 21:58:31,426 INFO    WriterThread:536266 [datastore.py:close():257] close: wandb/run-20201215_215815-29qyes7n/run-29qyes7n.wandb
+2020-12-15 21:58:31,803 INFO    Thread-8  :536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:31,803 INFO    SenderThread:536266 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:31,804 INFO    SenderThread:536266 [dir_watcher.py:finish():309] scan: wandb/run-20201215_215815-29qyes7n/files
+2020-12-15 21:58:31,804 INFO    SenderThread:536266 [dir_watcher.py:finish():315] scan save: wandb/run-20201215_215815-29qyes7n/files/output.log output.log
+2020-12-15 21:58:31,804 INFO    SenderThread:536266 [dir_watcher.py:finish():315] scan save: wandb/run-20201215_215815-29qyes7n/files/config.yaml config.yaml
+2020-12-15 21:58:31,804 INFO    SenderThread:536266 [dir_watcher.py:finish():315] scan save: wandb/run-20201215_215815-29qyes7n/files/requirements.txt requirements.txt
+2020-12-15 21:58:31,806 DEBUG   Thread-12 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:58:31,806 INFO    SenderThread:536266 [dir_watcher.py:finish():315] scan save: wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json wandb-summary.json
+2020-12-15 21:58:31,806 INFO    SenderThread:536266 [dir_watcher.py:finish():315] scan save: wandb/run-20201215_215815-29qyes7n/files/wandb-metadata.json wandb-metadata.json
+2020-12-15 21:58:31,807 INFO    SenderThread:536266 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-15 21:58:31,807 INFO    SenderThread:536266 [file_pusher.py:join():174] waiting for file pusher
+2020-12-15 21:58:31,810 DEBUG   Thread-14 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:58:31,810 DEBUG   Thread-13 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:58:31,812 DEBUG   Thread-15 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:58:32,509 DEBUG   Thread-13 :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:58:32,510 DEBUG   Thread-12 :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:58:32,514 DEBUG   Thread-13 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 21:58:32,514 DEBUG   Thread-14 :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:58:32,516 DEBUG   Thread-12 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 21:58:32,518 DEBUG   Thread-15 :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:58:32,518 DEBUG   Thread-14 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 21:58:32,520 DEBUG   Thread-15 :536266 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 21:58:33,463 DEBUG   Thread-14 :536266 [connectionpool.py:_make_request():428] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/me17b084/RotNet-PyTorch-code/29qyes7n/requirements.txt?Expires=1608136112&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=yvVAvO%2FTI8CSKpPvMMFn2qaeWQj9HCwMh%2BBMvAwXnc3H5NE1Yd6WhgpDjIfxCr0%2FFHO4mUAt0zjyrz1TKEI9aQHQ9pM0GsN3Ox1hfk5A%2Fr3HDClih8ZDp8reUYSUQVdlMicDhUHSyy%2Bt7UvX6IPln0LANi5nEsiSStcmHD2WBdQTMmWkPOEOd9uRZDG3ROWNwnWwN4r62HfzyHsFrG5EnVD4M81QW3z0vHb%2Fn2yRAlg8A0z23PYlYFPgPZzA6FxyiHE8zvlnCQBLnbLoeWiXSJHnc6Z8vJMRilqzbc1WCmtItjieRsQ6hnUvLaH7rHYPnfBhhgAry3%2BSleuvALGbMQ%3D%3D HTTP/1.1" 200 0
+2020-12-15 21:58:33,464 INFO    Thread-14 :536266 [upload_job.py:push():112] Uploaded file wandb/run-20201215_215815-29qyes7n/files/requirements.txt
+2020-12-15 21:58:33,466 DEBUG   Thread-15 :536266 [connectionpool.py:_make_request():428] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/me17b084/RotNet-PyTorch-code/29qyes7n/wandb-summary.json?Expires=1608136112&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=wObdaVf%2BjK0gVHGLKjN07BMaSEteemyCsnyemZUCOqVRZ6DnFDf7hio7EA5UpHiBsbIO7EqePra8nguJYq0iAd%2B5%2Fe%2F%2F3D%2Bv9%2FcKnrBsyLwjJWFHxcNBdHHwzz0C5EWj2i35LGTHNAnikg2NvixPaHI7SV9w6vqMj7HsT7HyCgwyghCIcJRrQ%2FGleX0iw66cUHs5Z2a9G0yXjhTeimQnU5bzdtUI9EocXJLVnJoaA2eT2THoTv5ALUzpsMNnhdHJ1SXcaYKEiIEYbG4AHc2o%2FR8nZ1QGwEXTyx1apFlQqvQjBFzyXf83NF%2FKshfLePp3undTguDUcUG%2Bf1oY9QklYA%3D%3D HTTP/1.1" 200 0
+2020-12-15 21:58:33,467 INFO    Thread-15 :536266 [upload_job.py:push():112] Uploaded file wandb/run-20201215_215815-29qyes7n/files/wandb-summary.json
+2020-12-15 21:58:33,470 DEBUG   Thread-13 :536266 [connectionpool.py:_make_request():428] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/me17b084/RotNet-PyTorch-code/29qyes7n/config.yaml?Expires=1608136112&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=qXGjdrM4YKeFl7Y56ktd%2B1Q7dUYfPZtNXWdkTPgi4he0fEBxte2A%2FyJ4MbZDAUCy%2BbJ9y1mpkibG8VKsKGshhK4Ms8uOAU53FuN0SB1yHEig5f42oIecy4qVdFb9vqMUpccbccTBxHGvC2u1vyUmplNmxpzhhdAIk3AMQK5PnDEMoxi7FGxjX974HgxlqentxayrVsJlGZJXRfkg8Pa7H%2FEuW%2BU9hpedl8hyXMLsXNCcHhDIdxhar2aQh4iMPFeRh%2BWFLc%2FdnVDDZ1LATmzmoyBPGzZJzRvtP7cv3sdBOwnxDLU4oEbcxrg6wZtaWsrJ8Eh14d1pKkTjwLeqtDzuQA%3D%3D HTTP/1.1" 200 0
+2020-12-15 21:58:33,470 DEBUG   Thread-12 :536266 [connectionpool.py:_make_request():428] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/me17b084/RotNet-PyTorch-code/29qyes7n/output.log?Expires=1608136112&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=dwl9wtjnL9GGAq%2BZSv%2BrtFVoZOxoG5IsRLZWrCxGIvO4XHIgR2P3x68enPV6Jn4uicvdOY65YqF2X5yORR9Nlthaf34OXxwRPAF0vxBdtDKNufT1UiWcI4z0TeoZvkIw07P8nyyuH2pnYp2tY3a10YGYIVpY9H0Y56CD7xAyEb9xAu5IgwS7KagaZAvCouyTWOpdxfaG%2BzUU6BrqcpMISTH%2BQ%2B2ipTLTt%2Bl0APokfLV8G63e04v5%2Ft7nkwa9S9Iljn1DPQNecGUfSEIofXsDX9Nsnh07JrkHR62wLpam8Ub0M3Rq%2FRhNI4mmmzCzH%2Fc3x8ZLTtFpDkd5xuXURrJoew%3D%3D HTTP/1.1" 200 0
+2020-12-15 21:58:33,471 INFO    Thread-13 :536266 [upload_job.py:push():112] Uploaded file wandb/run-20201215_215815-29qyes7n/files/config.yaml
+2020-12-15 21:58:33,471 INFO    Thread-12 :536266 [upload_job.py:push():112] Uploaded file wandb/run-20201215_215815-29qyes7n/files/output.log
+2020-12-15 21:58:34,106 DEBUG   Thread-5  :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /files/me17b084/RotNet-PyTorch-code/29qyes7n/file_stream HTTP/1.1" 200 None
+2020-12-15 21:58:34,746 DEBUG   Thread-5  :536266 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /files/me17b084/RotNet-PyTorch-code/29qyes7n/file_stream HTTP/1.1" 200 None
+2020-12-15 21:58:34,752 INFO    MainThread:536266 [internal.py:handle_exit():137] Internal process exited

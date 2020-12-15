@@ -1,0 +1,10 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Traceback (most recent call last):
+  File "main.py", line 168, in <module>
+    train_loader = data_utils.get_dataloader(train_dset, config['batch_size'], config['num_workers'], shuffle=True, weigh=True)
+  File "/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch/code/data_utils.py", line 78, in get_dataloader
+    weights = sample_weights(dataset.targets)
+AttributeError: 'RotnetDataset' object has no attribute 'targets'

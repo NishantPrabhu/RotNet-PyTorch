@@ -1,0 +1,42 @@
+
+# General
+epochs: 100
+batch_size: 128
+num_workers: 6
+eval_every: 10
+
+# Models
+encoder:
+  name: resnet18
+
+optimizer:
+  name: sgd
+  lr: 0.1
+  weight_decay: 5.e-04
+
+scheduler:
+  name: cosine
+  epochs: 100
+  warmup_epochs: 10
+
+# Dataset
+dataset:
+  name: cifar10
+  root: ../data/cifar10
+  mean: [0.4914, 0.4822, 0.4465]
+  std:  [0.2023, 0.1994, 0.2010]
+
+
+# Linear evaluation
+linear_eval_epochs: 100
+linear_eval_valid_every: 5
+
+clf_optimizer:
+  name: sgd
+  lr: 0.1
+  weight_decay: 1.e-06
+
+clf_scheduler:
+  name: cosine
+  lr: 0.01
+  weight_decay: 1.e-06

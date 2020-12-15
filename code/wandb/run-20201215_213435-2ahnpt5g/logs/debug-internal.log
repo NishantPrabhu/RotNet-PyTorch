@@ -1,0 +1,31 @@
+2020-12-15 21:34:35,451 INFO    MainThread:513118 [internal.py:wandb_internal():62] W&B internal server running at pid: 513118
+2020-12-15 21:34:35,453 DEBUG   HandlerThread:513118 [handler.py:handle_request():54] handle_request: check_version
+2020-12-15 21:34:35,453 INFO    WriterThread:513118 [datastore.py:open_for_write():76] open: wandb/run-20201215_213435-2ahnpt5g/run-2ahnpt5g.wandb
+2020-12-15 21:34:35,453 DEBUG   SenderThread:513118 [sender.py:send():88] send: header
+2020-12-15 21:34:35,453 DEBUG   SenderThread:513118 [sender.py:send():88] send: request
+2020-12-15 21:34:35,454 DEBUG   SenderThread:513118 [sender.py:send_request():97] send_request: check_version
+2020-12-15 21:34:35,455 DEBUG   Thread-4  :513118 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): pypi.org:443
+2020-12-15 21:34:39,975 DEBUG   SenderThread:513118 [sender.py:send():88] send: run
+2020-12-15 21:34:39,976 DEBUG   SenderThread:513118 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch, universal_newlines=False, shell=None, istream=None)
+2020-12-15 21:34:39,980 DEBUG   SenderThread:513118 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-15 21:34:39,986 DEBUG   SenderThread:513118 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:35:00,129 DEBUG   SenderThread:513118 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:35:09,975 DEBUG   HandlerThread:513118 [handler.py:handle_request():54] handle_request: shutdown
+2020-12-15 21:35:09,975 INFO    HandlerThread:513118 [handler.py:finish():267] shutting down handler
+2020-12-15 21:35:09,980 INFO    WriterThread:513118 [datastore.py:close():257] close: wandb/run-20201215_213435-2ahnpt5g/run-2ahnpt5g.wandb
+2020-12-15 21:35:13,168 DEBUG   SenderThread:513118 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:35:13,173 INFO    SenderThread:513118 [dir_watcher.py:__init__():167] watching files in: wandb/run-20201215_213435-2ahnpt5g/files
+2020-12-15 21:35:13,173 INFO    SenderThread:513118 [sender.py:_start_run_threads():461] run started: 2ahnpt5g with start time 1608048275
+2020-12-15 21:35:13,173 INFO    SenderThread:513118 [sender.py:finish():583] shutting down sender
+2020-12-15 21:35:13,173 INFO    SenderThread:513118 [dir_watcher.py:finish():280] shutting down directory watcher
+2020-12-15 21:35:14,173 INFO    SenderThread:513118 [dir_watcher.py:finish():309] scan: wandb/run-20201215_213435-2ahnpt5g/files
+2020-12-15 21:35:14,173 INFO    SenderThread:513118 [dir_watcher.py:finish():315] scan save: wandb/run-20201215_213435-2ahnpt5g/files/config.yaml config.yaml
+2020-12-15 21:35:14,173 INFO    SenderThread:513118 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-15 21:35:14,174 INFO    SenderThread:513118 [file_pusher.py:join():174] waiting for file pusher
+2020-12-15 21:35:14,177 DEBUG   Thread-10 :513118 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:35:14,894 DEBUG   Thread-10 :513118 [connectionpool.py:_make_request():428] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-15 21:35:14,910 DEBUG   Thread-10 :513118 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-15 21:35:20,824 DEBUG   Thread-10 :513118 [connectionpool.py:_make_request():428] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/me17b084/RotNet-PyTorch-code/2ahnpt5g/config.yaml?Expires=1608134714&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=DAMC9O9YJgtqSCqVjq34JAQWu%2Bc7MUOHJiHaTX4t71v1KWLDzSvrCOEZmSBHWKNUVzZ3orYh%2BAIbWWqzO9%2BDor867CSQ42mqnrmxk9LrSgw6CfdnVAcpeIEahqYIwg%2FLEixn%2FBg4AwaaVECFFWSKar5VASMcK1LUILo7LdQZJDd2%2BYwEDMMnB%2BjNv7aDYPlQmY4udrau0DPTuMDDsGeBPUvL6bIbHSKEIdQ3Ljiq1JnKgI7wIxLrUo5EmnoIX2GWN%2FMixEety5301QAUGyzGMktaRFru11DIxaecBK2%2BTjv1Ysv%2FrjGpeHmYSE3H9lMCoeBqtzIl%2Fc48YFdCsYUBfA%3D%3D HTTP/1.1" 200 0
+2020-12-15 21:35:20,825 INFO    Thread-10 :513118 [upload_job.py:push():112] Uploaded file wandb/run-20201215_213435-2ahnpt5g/files/config.yaml
+2020-12-15 21:35:21,183 DEBUG   Thread-5  :513118 [connectionpool.py:_new_conn():957] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-15 21:35:22,730 INFO    MainThread:513118 [internal.py:handle_exit():137] Internal process exited

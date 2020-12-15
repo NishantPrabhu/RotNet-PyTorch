@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.4.0-58-generic-x86_64-with-glibc2.29",
+    "python": "3.8.5",
+    "heartbeatAt": "2020-12-15T15:38:14.648633",
+    "startedAt": "2020-12-15T15:38:11.165272",
+    "docker": null,
+    "gpu": "GeForce RTX 2060 SUPER",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": "10.1.243",
+    "args": [
+        "--config",
+        "config.yaml"
+    ],
+    "state": "running",
+    "codePath": "code/main.py",
+    "program": "main.py",
+    "git": {
+        "remote": "https://github.com/NishantPrabhu/RotNet-PyTorch",
+        "commit": "aa1ffb1eb1dcb219cd6dd37e02725371b0588312"
+    },
+    "email": "me17b084@smail.iitm.ac.in",
+    "root": "/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch",
+    "host": "nishant-aorus",
+    "username": "nishant",
+    "executable": "/usr/bin/python3"
+}

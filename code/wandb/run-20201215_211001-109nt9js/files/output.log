@@ -1,0 +1,31 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+[Train epoch] 1:   0%|          | 0/391 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 174, in <module>
+    trainer.train(train_loader, val_loader)
+  File "main.py", line 139, in train
+    avg_loss = self.train_one_epoch(epoch+1, train_loader)
+  File "main.py", line 43, in train_one_epoch
+    for batch in data_loader:
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py", line 363, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py", line 989, in _next_data
+    return self._process_data(data)
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py", line 1014, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.8/dist-packages/torch/_utils.py", line 395, in reraise
+    raise self.exc_type(msg)
+AttributeError: Caught AttributeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/_utils/worker.py", line 185, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/nishant/Desktop/Desktop/Papers2code/Implementations/RotNet-PyTorch/code/data_utils.py", line 51, in __getitem__
+    order = torch.from_numpy(np.random.permute([0, 1, 2, 3])).long()
+AttributeError: module 'numpy.random' has no attribute 'permute'
+
