@@ -52,6 +52,60 @@ class Encoder(nn.Module):
         return out
 
 
+class AlexnetEncoder(nn.Module):
+
+    def __init__(self):
+        super(AlexnetEncoder, self).__init__()
+        self.conv1 = nn.Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+        self.relu1 = nn.ReLU(inplace=True)
+        self.mxpl1 = nn.MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+        self.conv2 = nn.Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+        self.relu2 = nn.ReLU(inplace=True)
+        self.mxpl2 = nn.MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+        self.conv3 = nn.Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        self.relu3 = nn.ReLU(inplace=True)
+        self.conv4 = nn.Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        self.relu4 = nn.ReLU(inplace=True)
+        self.conv5 = nn.Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        self.relu5 = nn.ReLU(inplace=True)
+        self.mxpl3 = nn.MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+        self.avgpool = nn.AdaptiveAvgPool2d(output_size=(2, 2))
+
+    def forward(self, x):
+        x = self.conv1(x) 
+        x = self.relu1(x) 
+        x = self.mxpl1(x) 
+        x = self.conv2(x) 
+        x = self.relu2(x) 
+        x = self.mxpl2(x)
+        x = self.conv3(x) 
+        x = self.relu3(x) 
+        x = self.conv4(x) 
+        x = self.relu4(x) 
+        x = self.conv5(x) 
+        x = self.relu5(x) 
+        x = self.mxpl3(x)
+        x = self.avgpool(x)
+        return torch.flatten(x, 1)
+
+    def forward(self, x):
+        x = self.conv1(x) 
+        x = self.relu1(x) 
+        x = self.mxpl1(x) 
+        x = self.conv2(x) 
+        x = self.relu2(x) 
+        x = self.mxpl2(x)
+        x = self.conv3(x) 
+        x = self.relu3(x) 
+        x = self.conv4(x) 
+        x = self.relu4(x) 
+        x = self.conv5(x) 
+        x = self.relu5(x) 
+        x = self.mxpl3(x)
+        x = self.avgpool(x)
+        return torch.flatten(x, 1)
+
+
 class RotnetClassifier(nn.Module):
 
     def __init__(self, in_dim=512, n_classes=4):
@@ -74,4 +128,5 @@ class LinearClassifier(nn.Module):
         self.W1 = nn.Linear(in_dim, n_classes)
 
     def forward(self, x):
-        return F.log_softmax(self.W1(x), dim=-1)
+        x = self.W1(x)
+        return F.log_softmax(x, dim=-1)
